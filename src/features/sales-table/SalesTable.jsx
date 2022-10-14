@@ -2,7 +2,7 @@ import React from "react";
 import './styles-sales-table.css';
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faChevronDown } from "@fortawesome/free-solid-svg-icons";
+import { faChevronDown, faChevronUp } from "@fortawesome/free-solid-svg-icons";
 
 const SalesTable = (props) => {
     return(
@@ -14,35 +14,50 @@ const SalesTable = (props) => {
                     <div>
                         WEEK ENDING
                         <span className="arrowIcon"> 
-                            <FontAwesomeIcon icon={faChevronDown}></FontAwesomeIcon>
+                            {
+                                props.data.sortByOrder === "asc" && props.data.sortByColumnName == "weekEnding" ? <FontAwesomeIcon icon={faChevronDown}></FontAwesomeIcon>
+                                : <FontAwesomeIcon icon={faChevronUp}></FontAwesomeIcon>
+                            }
                         </span>
                     </div>
                     </th>
                     <th scope="col" onClick={() => props.sortBy("retailSales")}>
                     <div>
                         RETAIL SALES <span className="arrowIcon">
-                            <FontAwesomeIcon icon={faChevronDown}></FontAwesomeIcon>
+                        {
+                            props.data.sortByOrder === "asc" && props.data.sortByColumnName == "retailSales" ? <FontAwesomeIcon icon={faChevronDown}></FontAwesomeIcon>
+                            : <FontAwesomeIcon icon={faChevronUp}></FontAwesomeIcon>
+                        }
                         </span>
                     </div>
                     </th>
                     <th scope="col" onClick={() => props.sortBy("wholesaleSales")}>
                     <div>
                         WHOLESALE SALES <span className="arrowIcon">
-                            <FontAwesomeIcon icon={faChevronDown}></FontAwesomeIcon>
+                        {
+                            props.data.sortByOrder === "asc" && props.data.sortByColumnName == "wholesaleSales" ? <FontAwesomeIcon icon={faChevronDown}></FontAwesomeIcon>
+                            : <FontAwesomeIcon icon={faChevronUp}></FontAwesomeIcon>
+                        }
                         </span>
                     </div>
                     </th>
                     <th scope="col" onClick={() => props.sortBy("unitsSold")}>
                     <div>
                         UNITS SOLD <span className="arrowIcon">
-                            <FontAwesomeIcon icon={faChevronDown}></FontAwesomeIcon>
+                        {
+                            props.data.sortByOrder === "asc" && props.data.sortByColumnName == "unitsSold" ? <FontAwesomeIcon icon={faChevronDown}></FontAwesomeIcon>
+                            : <FontAwesomeIcon icon={faChevronUp}></FontAwesomeIcon>
+                        }
                         </span>
                     </div>
                     </th>
                     <th scope="col" onClick={() => props.sortBy("retailerMargin")}>
                     <div>
                         RETAILER MARGIN <span className="arrowIcon">
-                            <FontAwesomeIcon icon={faChevronDown}></FontAwesomeIcon>
+                        {
+                            props.data.sortByOrder === "asc" && props.data.sortByColumnName == "retailerMargin" ? <FontAwesomeIcon icon={faChevronDown}></FontAwesomeIcon>
+                            : <FontAwesomeIcon icon={faChevronUp}></FontAwesomeIcon>
+                        }
                         </span>
                     </div>
                     </th>

@@ -15,7 +15,11 @@ const ProductLeftRail = (props) => {
                     <figcaption id="subtitle">{subtitle}</figcaption>
                 </figure>
                 <hr />
-                <div id="spans">{tags.map( tag => (<span className="tags">{tag}</span>))}</div>
+                <div id="spans">
+                    { 
+                      tags && tags.map( tag => (<span className="tags">{tag}</span>))
+                    }
+                    </div>
                 <hr />
             </div>
         </>

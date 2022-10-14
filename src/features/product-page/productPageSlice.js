@@ -82,7 +82,7 @@ export const productPageSlice = createSlice({
 
             action.payload.sales.forEach( elem => {
                 let monthValue = new Date(elem.weekEnding).getUTCMonth();
-                let month = monthNames[new Date(elem.weekEnding).getUTCMonth()];
+                let month = monthNames[monthValue];
                 if(!monthlySalesData[month]){
                     monthlySalesData[month] = {
                         retailSales: elem.retailSales ,

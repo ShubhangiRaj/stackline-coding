@@ -26,3 +26,8 @@ tr {
     font-size: 0.66em;
     color: lightgrey;
 }
+.arrowIconActive{
+    margin: 6px;
+    font-size: 0.66em;
+    color: black;
+}
