@@ -1,0 +1,38 @@
+#product {
+    background: white;
+}
+
+#product img {
+    height: 100%;
+    width: 100%;
+}
+#title {
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding: 2%;
+}
+#subtitle {
+    text-align: center;
+    font-weight: 300;
+    color: gray;
+    padding: 2%;
+}
+#spans {
+    text-align: center;
+}
+.tags {
+    border: 2px solid #f7f8fa;
+    border-radius: 5px;
+    padding: 2%;
+    margin: 2%;
+    display: inline-block;
+    font: 0.75em sans-serif;
+    color: #888;
+}
+
+#product hr {
+    background-color: #f7f8fa;
+    height: 2px;
+    border: 0;
+}

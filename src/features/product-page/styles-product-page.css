@@ -1,0 +1,40 @@
+.productPage {
+    background: #F5F8FA;
+    display: grid;
+    grid-template-areas: 'header header header header header'
+    'product salesGraph salesGraph salesGraph salesGraph'
+    'product salesTable salesTable salesTable salesTable';
+    row-gap: 36px;
+    column-gap: 8px;
+}
+
+.headerContainer{
+    grid-area: header;
+    background: white;
+    box-shadow: 5px 5px 5px 2px #eff2f5;
+}
+
+.productLeftRailContainer{
+    grid-area: product;
+    background: white;
+    box-shadow: 5px 5px 5px 2px #eff2f5;
+    margin: 1em;
+    max-width: 25vw;
+}
+
+.productSalesGraphContainer{
+    grid-area: salesGraph;
+    background: white;
+    box-shadow: 5px 5px 5px 2px #eff2f5;
+    margin: 1em;
+    padding: 2em;
+}
+
+
+.productSalesTableContainer{
+    grid-area: salesTable;
+    background: white;
+    box-shadow: 5px 5px 5px 2px #eff2f5;
+    margin : 1em;
+    text-align: center;
+}

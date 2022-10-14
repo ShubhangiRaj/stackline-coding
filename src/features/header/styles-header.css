@@ -1,0 +1,12 @@
+.header {
+    width: 100vw;
+    height: 48px;
+    background-color: #062849;
+    padding-left: 1em;
+    padding-right: 1em;
+}
+
+.logo {
+    width: 48px;
+    height: 48px;
+}   

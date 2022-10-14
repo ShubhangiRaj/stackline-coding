@@ -1,0 +1,28 @@
+#table {
+    text-align: center;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+table th {
+    padding: 2%;
+    font-weight: 300;
+    color: #222;
+}
+tbody td {
+    border-top: 2px solid #f7f8fa;
+    padding: 2%;
+}
+th:hover {
+    cursor: pointer;
+}
+tr {
+    color: #888;
+}
+
+.arrowIcon{
+    margin: 6px;
+    font-size: 0.66em;
+    color: lightgrey;
+}
